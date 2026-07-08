@@ -15,6 +15,7 @@ Implement an approved plan faithfully — turn its steps into real files, code, 
 - Follow this repository's existing conventions (`CLAUDE.md`, and any project-level conventions).
 - Explain reasoning, new files, and new dependencies as work proceeds.
 - Flag scope creep or blockers back to you rather than silently expanding scope.
+- When the work involves interactive or stateful UI, verify it in a real browser — not just by reasoning about the code. At minimum, check: reload behavior, a live state change happening while the page stays open (not just at load), user interaction that occurs after a state change, and whether an explicit user choice correctly overrides system/default behavior rather than being silently reset by it.
 
 ## Out of scope
 

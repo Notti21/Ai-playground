@@ -61,6 +61,7 @@ export function ThemeToggle() {
       type="button"
       onClick={toggleTheme}
       aria-label={label}
+      aria-pressed={theme === "dark"}
       title={label}
       className="rounded-full border border-border p-2 text-muted transition-colors hover:border-accent/50 hover:text-accent"
     >

@@ -27,6 +27,10 @@ export default function RootLayout({
     <html
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      // The pre-paint script below intentionally sets data-theme on this
+      // element before React hydrates, based on localStorage (which the
+      // server can't read) — so a mismatch here is expected, not a bug.
+      suppressHydrationWarning
     >
       <head>
         <script

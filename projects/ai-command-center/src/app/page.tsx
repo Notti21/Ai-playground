@@ -1,5 +1,6 @@
 import { Hero } from "@/components/sections/Hero";
 import { AgentSystem } from "@/components/sections/AgentSystem";
+import { PdcaStatus } from "@/components/sections/PdcaStatus";
 import { Projects } from "@/components/sections/Projects";
 import { Tools } from "@/components/sections/Tools";
 import { KnowledgeBase } from "@/components/sections/KnowledgeBase";
@@ -11,6 +12,7 @@ export default function Home() {
     <main className="mx-auto flex w-full max-w-5xl flex-1 flex-col px-6">
       <Hero />
       <AgentSystem />
+      <PdcaStatus />
       <Projects />
       <Tools />
       <KnowledgeBase />

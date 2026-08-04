@@ -24,9 +24,9 @@ npm run dev
 ```
 
 Open http://localhost:3000. You should see the "Command Center" landing page: a hero heading
-("Command Center") followed by sections titled "Plan, Do, Check, Act", "What the system is being
-applied to", "What powers the system", "What the system knows", "What the agents have done", and
-"What's next".
+("Command Center") followed by sections titled "Plan, Do, Check, Act", "The loop runs end-to-end",
+"What the system is being applied to", "What powers the system", "What the system knows", "What
+the agents have done", and "What's next".
 
 ## Production build
 

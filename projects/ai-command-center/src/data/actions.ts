@@ -5,10 +5,6 @@ export interface NextAction {
 
 export const nextActions: NextAction[] = [
   {
-    title: "Design the Plan / Do / Check / Act agent workflow",
-    detail: "Decide how each agent hands off work to the next.",
-  },
-  {
     title: "Decide how MCP servers connect into the agent system",
     detail: "This is how agents will reach real tools and data.",
   },

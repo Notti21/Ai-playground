@@ -12,8 +12,9 @@ export function RecentActivity() {
       <Card className="flex flex-col items-center gap-3 py-12 text-center">
         <Activity className="h-6 w-6 text-muted" strokeWidth={1.5} />
         <p className="max-w-sm text-sm text-muted">
-          No activity yet. Once the Plan, Do, Check, and Act agents start
-          running, their actions will appear here.
+          This section is a placeholder for a live feed of agent runs.
+          Today, agent activity is tracked in checkpoint notes and PDCA
+          cycle folders elsewhere in the repo, not rendered here yet.
         </p>
       </Card>
     </section>

@@ -9,10 +9,6 @@ export const nextActions: NextAction[] = [
     detail: "This is how agents will reach real tools and data.",
   },
   {
-    title: "Turn Projects into real project pages",
-    detail: "Start with CRM, WMS, and Automation.",
-  },
-  {
     title: "Connect Recent Activity to a real agent log",
     detail: "Replace the empty state once agents actually run.",
   },

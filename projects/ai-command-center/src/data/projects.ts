@@ -26,15 +26,19 @@ export const projects: Project[] = [
   },
   {
     name: "WMS",
-    description: "Warehouse management system for inventory and operations.",
+    description:
+      "WMS is a project area for defining how Jula's Herb tracks inventory, stock movement, stock accuracy, and location-based inventory across warehouse and retail-related stock locations more systematically. The exact users, workflows, metrics, and implementation plan are not confirmed yet.",
     status: "Idea",
     icon: Boxes,
+    slug: "wms",
   },
   {
     name: "Automation",
-    description: "Workflow automation across Gmail, Drive, and other APIs.",
-    status: "Planned",
+    description:
+      "Automation is a project area for defining how Jula's Herb can use AI, workflow automation, and internal tools to reduce repetitive work, improve follow-up, and support business operations more systematically. The exact users, workflows, metrics, and implementation plan are not confirmed yet.",
+    status: "Idea",
     icon: Workflow,
+    slug: "automation",
   },
   {
     name: "Store Care Program",

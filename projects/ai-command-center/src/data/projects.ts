@@ -18,9 +18,11 @@ export const projects: Project[] = [
   },
   {
     name: "CRM",
-    description: "Customer relationship management for the business.",
+    description:
+      "CRM is a project area for defining how Jula's Herb manages customer relationships, customer data, follow-up, retention, and repeat-purchase activities more systematically. The exact users, workflows, metrics, and implementation plan are not confirmed yet.",
     status: "Idea",
     icon: Building2,
+    slug: "crm",
   },
   {
     name: "WMS",

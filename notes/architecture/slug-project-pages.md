@@ -12,10 +12,12 @@ or refined; it's a living document, not an immutable decision record.
 ### 1. `slug` is an optional field on the shared `Project` type
 
 `src/data/projects.ts` defines `slug?: string` on `Project`. Optional, not required — this is what
-makes incremental rollout cheap: projects without a page yet (only Jula AI OS, as of this writing —
-Store Care Program, CRM, WMS, and Automation now all have `slug` set) just omit the field, and every
-piece of downstream logic below is written to treat "no `slug`" as "no page" rather than needing a
-placeholder value.
+makes incremental rollout cheap: Store Care Program, CRM, WMS, and Automation now all have `slug`
+set, and a project without one just omits the field, with every piece of downstream logic below
+written to treat "no `slug`" as "no page" rather than needing a placeholder value. Jula AI OS is
+the one remaining card with no `slug` — and per
+`notes/decisions/2026-09-01-jula-ai-os-role.md` it will be *removed* from the grid rather than
+given a page, since it's the umbrella operating model, not a peer project.
 
 ### 2. The card conditionally wraps itself in a `Link`
 
@@ -105,19 +107,19 @@ future cycle if skipped:
 
 - No actual product functionality on these pages — no data model, no persistence, no per-project
   features. They are honest, thin descriptions of project intent, not working systems.
-- No visual distinction yet between linked (real page) and unlinked (no page yet) cards. Flagged as
-  an open UX question across all three cycles' retros, still not decided. The shape of the question
-  has shifted as more projects got pages: after the first cycle it was 1 of 5 cards linked; after the
-  second, 2 of 5; after this (third) cycle, 4 of 5 — only Jula AI OS remains unlinked. With just one
-  card now the exception rather than the rule, it may be worth reframing the question as "should the
-  one unlinked card (Jula AI OS) be visually marked as different" rather than "should linked cards be
-  marked as different" — still an open decision, not resolved by this note.
+- No visual distinction between linked (real page) and unlinked (no page yet) cards. This was an
+  open UX question across the first three cycles' retros (1 of 5 cards linked, then 2 of 5, then
+  4 of 5 — only Jula AI OS unlinked). It is now **largely moot**: per
+  `notes/decisions/2026-09-01-jula-ai-os-role.md`, Jula AI OS — the only unlinked card — will be
+  removed from the grid, not given a page. Once that removal lands, every remaining card is a link
+  and there is no linked/unlinked mix to distinguish. A future cycle should not re-raise this.
 - No card-vs-page description split — all three cycles used the same description text in the card and
   on the page, since the content was already short. Revisit if a future project's page content needs
   to be longer than what reads well on a card.
-- Whether Jula AI OS should ever get a real page remains an open, separate decision — it's treated as
-  an umbrella/system-level concept rather than a normal project, and every cycle so far has kept it
-  explicitly out of scope rather than deciding its fate one way or the other.
+- Jula AI OS's role is **now decided** — see `notes/decisions/2026-09-01-jula-ai-os-role.md`. It is
+  the Jula-specific instance of Business OS (the umbrella operating model), not a peer project, so
+  it will be removed from the Projects grid rather than given a slug/page, and later represented as
+  a system-overview area elsewhere in the app. This pattern does not apply to it.
 
 ## Reference implementation
 

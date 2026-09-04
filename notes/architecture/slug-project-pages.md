@@ -121,8 +121,10 @@ future cycle if skipped:
 - Jula AI OS's role is **decided** — see `notes/decisions/2026-09-01-jula-ai-os-role.md`. It is
   the Jula-specific instance of Business OS (the umbrella operating model), not a peer project, so
   it was removed from the Projects grid (`agents/runs/2026-09-03-remove-jula-ai-os-card/`) rather
-  than given a slug/page. A separate future cycle will represent it as a system-overview area
-  elsewhere in the app. This pattern does not apply to it.
+  than given a slug/page. It is represented instead by the "System Overview" homepage section
+  (`agents/runs/2026-09-04-jula-ai-os-system-overview/`), which states the hierarchy — Jula AI OS
+  as the operating model, AI Command Center as the dashboard into it, the project areas as what it
+  is applied to. This pattern does not apply to it.
 
 ## Reference implementation
 

@@ -1,6 +1,7 @@
 import { Hero } from "@/components/sections/Hero";
 import { AgentSystem } from "@/components/sections/AgentSystem";
 import { PdcaStatus } from "@/components/sections/PdcaStatus";
+import { SystemOverview } from "@/components/sections/SystemOverview";
 import { Projects } from "@/components/sections/Projects";
 import { Tools } from "@/components/sections/Tools";
 import { KnowledgeBase } from "@/components/sections/KnowledgeBase";
@@ -13,6 +14,7 @@ export default function Home() {
       <Hero />
       <AgentSystem />
       <PdcaStatus />
+      <SystemOverview />
       <Projects />
       <Tools />
       <KnowledgeBase />

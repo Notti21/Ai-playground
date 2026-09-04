@@ -1,4 +1,4 @@
-import { Boxes, Building2, Workflow, Bot, Store, type LucideIcon } from "lucide-react";
+import { Boxes, Building2, Workflow, Store, type LucideIcon } from "lucide-react";
 
 export interface Project {
   name: string;
@@ -9,13 +9,6 @@ export interface Project {
 }
 
 export const projects: Project[] = [
-  {
-    name: "Jula AI OS",
-    description:
-      "The umbrella system connecting agents, projects, and tools into one operating model.",
-    status: "In progress",
-    icon: Bot,
-  },
   {
     name: "CRM",
     description:

@@ -11,7 +11,7 @@ A computer's operating system doesn't do your work for you — it provides the s
 - A shared, durable **knowledge base** (decisions, architecture, lessons learned) instead of tribal knowledge in someone's head.
 - A shared **way of turning goals into execution** — Plan, Do, Check, Act — instead of every task being handled ad hoc, differently, by whoever happens to be doing it.
 - A shared set of **AI agents**, working inside clear role boundaries, doing the repeatable cognitive labor of planning, building, reviewing, and documenting.
-- A shared **map of capabilities** (see `docs/capability-map.md`) that every future project — CRM, WMS, automation, AI Command Center, and whatever comes after — is built on top of, instead of each one being its own disconnected island.
+- A shared **map of capabilities** (see `docs/capability-map.md`) that every future project — CRM, WMS, automation, the Store Care Program, and whatever comes after — is built on top of, instead of each one being its own disconnected island.
 
 AI Command Center is the *visible dashboard* into this system. Business OS is the *foundation underneath it* — the operating model, not the screen.
 

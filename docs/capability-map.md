@@ -46,9 +46,9 @@ Foundation capabilities (Identity, Knowledge, Decisions) are what everything els
 
 ## Projects
 
-**Purpose:** The unit of "a deliverable being built" — the concrete initiatives the business is actually running: CRM, WMS, Automation, Jula AI OS, AI Command Center.
+**Purpose:** The unit of "a deliverable being built" — the concrete initiatives the business is actually running: CRM, WMS, Automation, Store Care Program.
 
-**What it contains:** The `projects/` folder — one subfolder per initiative, each with its own scoped conventions (e.g. `projects/ai-command-center/README.md`).
+**What it contains:** The `projects/` folder — one subfolder per initiative, each with its own scoped conventions (e.g. a per-project `README.md`).
 
 **Why it matters:** Gives every initiative a clear home and boundary, preventing sprawl where everything lives loose at the repo root. Gives a future Architect-type review something concrete to reason about: "does this belong to an existing project, or does it need a new one?"
 

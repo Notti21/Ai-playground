@@ -16,7 +16,7 @@ This folder is the operating manual for how AI agents work in this repository. I
              Plan     Do    Check    Act
 ```
 
-Projects (CRM, WMS, Automation, Jula AI OS, AI Command Center) are not agents — they're what the loop is applied *to*. One PDCA cycle always runs in the context of a specific project or task.
+Projects (CRM, WMS, Automation, Store Care Program) are not agents — they're what the loop is applied *to*. One PDCA cycle always runs in the context of a specific project or task.
 
 ## How one cycle works
 

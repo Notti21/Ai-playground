@@ -8,7 +8,7 @@ export function SystemOverview() {
       <SectionHeading
         eyebrow="System Overview"
         title="How the parts fit together"
-        description="Jula AI OS is the operating model for running the company. The AI Command Center is the dashboard and interface into it. CRM, WMS, Automation, and Store Care Program are the areas that operating model is being applied to."
+        description="Jula AI OS is the operating model for running the company. The AI Command Center is the dashboard and interface into it. CRM, WMS, Automation, and Store Care Program are the areas that the operating model is being applied to."
       />
       <Card>
         <Layers className="h-5 w-5 text-accent" strokeWidth={1.75} />

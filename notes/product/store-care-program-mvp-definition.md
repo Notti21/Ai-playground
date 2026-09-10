@@ -92,15 +92,19 @@ Additional fields are **[OPEN]** and added only when confirmed needed.
 
 - **Store** — store ID / name; channel / account; location; contact / person responsible (if
   available).
-- **Visit / Follow-up** — belongs to one Store; date; person performing; notes / findings.
-- **Issue / Action** — arises from a Visit/Follow-up finding (or is created directly against a
-  Store); description; owner; due date; status; resolution / outcome.
+- **Store Follow-up** — belongs to one Store; date; person performing; notes / findings.
+- **Issue / Action** — description; owner; due date; status; resolution / outcome. Always
+  belongs to exactly one Store (mandatory). May optionally link to the Store Follow-up it was
+  found on, or none (created directly against the Store — e.g. from a phone call).
 
-Relationships: a Store has many Visits/Follow-ups; a Visit/Follow-up has zero or more
-Issues/Actions; an Issue/Action is always tied to a Store (directly or via its Visit).
+Relationships: a Store has many Store Follow-ups; a Store Follow-up has zero or more
+Issues/Actions; an Issue/Action **always belongs to exactly one Store** (the Store link is
+mandatory), and **may optionally link to one Store Follow-up** (the follow-up link is not
+required to create an issue).
 
-- **[OPEN]** Whether an Issue/Action can exist without a parent Visit/Follow-up (e.g. logged
-  straight from a phone call).
+- **[CONFIRMED — synced from `notes/workflows/store-visit-issue-closure.md` §4, 2026-09-10]**
+  An Issue/Action can exist without a parent Store Follow-up: the Store link is mandatory, the
+  Store Follow-up link is optional.
 - **[OPEN]** The permitted `status` values for Issue/Action. The human confirmed the concept of
   status and the terms "open / overdue / resolved" for the management view, but not the full
   lifecycle list. "Overdue" is derived (due date past + not resolved), not a stored status.
